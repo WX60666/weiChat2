@@ -1,0 +1,47 @@
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        /*transform: translateY(-20px);*/
+    }
+
+    50%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-0.6rem);
+    }
+}
+@-webkit-keyframes fade-in {/*针对webkit内核*/
+    0% {
+        opacity: 0;
+        /*transform: translateY(-20px);*/
+    }
+
+    50%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-0.6rem);
+    }
+}
+#page_alert {
+    position:absolute;
+    top:0;
+    width:100%;
+    opacity:0;
+    font-size: 0.25rem;
+    height: 0.6rem;
+   	line-height: 0.6rem;
+    color: white;
+    text-align: center;
+    background-color: red;
+}
+.anm {
+    animation:linear fade-in 4s;
+    -webkit-animation:linear fade-in 4s;
+}
